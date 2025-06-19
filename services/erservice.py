@@ -1,8 +1,10 @@
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 import matplotlib
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+
 matplotlib.use('Agg')
 import numpy as np
+
 
 class ERDiagramGenerator:
     def __init__(self):

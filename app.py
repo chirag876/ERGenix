@@ -3,20 +3,24 @@ ERGenix - Automatic ER Diagram Generator
 A complete solution for generating ER diagrams and table statistics from databases
 """
 
-import os
-import time
-import threading
-from datetime import datetime, timedelta
-from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS
-import matplotlib.pyplot as plt
-import io
 import base64
+import io
+import os
+import threading
+import time
+from datetime import datetime, timedelta
+
+import matplotlib
+import matplotlib.pyplot as plt
+from flask import Flask, jsonify, render_template, request
+from flask_cors import CORS
+
 from database.erdb import DatabaseManager
 from services.erservice import ERDiagramGenerator
-import matplotlib
+
 matplotlib.use('Agg')  # Set non-GUI backend
 from threading import Lock
+
 matplotlib_lock = Lock()
 
 app = Flask(__name__)
