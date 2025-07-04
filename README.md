@@ -158,8 +158,6 @@ http://localhost:5000
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
 
----
-
 ## ⚠️ Notes
 
 * This setup is intended for **development**
@@ -168,6 +166,12 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 * Add detailed logging for debugging
 * Rate-limit API calls in production
 
----
+
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).  
+© 2025 Chirag Gupta. Please credit if reused.
+
 
 
